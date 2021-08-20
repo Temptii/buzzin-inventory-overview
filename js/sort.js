@@ -9,7 +9,6 @@ function sortTableByColumn(table, column, asc = true) {
         const bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
 
         return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
-    });
 
     // Remove all existing TRs from the table
     while (tBody.firstChild) {
